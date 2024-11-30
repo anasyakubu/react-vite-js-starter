@@ -1,0 +1,22 @@
+{
+  "name": "react-vite-js-starter",
+  "version": "1.0.0",
+  "description": "A CLI tool to create a React project with Vite and Tailwind CSS",
+  "main": "index.js",
+  "bin": {
+    "react-vite-js-starter": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasyakubu/react-vite-js-starter.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Anas Yakubu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anasyakubu/react-vite-js-starter/issues"
+  },
+  "homepage": "https://github.com/anasyakubu/react-vite-js-starter#readme"
+}
