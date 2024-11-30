@@ -23,7 +23,7 @@ jobs:
 
       # Step 3: Install project dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-save
 
       # Step 4: Run lint and tests (optional, can be customized)
       - name: Lint and Test
