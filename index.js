@@ -16,13 +16,17 @@ function runCommand(command) {
 // Function to create Tailwind config
 function createTailwindConfig() {
   const configContent = `
-module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+    /** @type {import('tailwindcss').Config} */
+    export default {
+      content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
   `;
 
   fs.writeFileSync("tailwind.config.js", configContent);
@@ -58,7 +62,7 @@ function init() {
 
   // Step 4: Initialize Tailwind CSS configuration
   console.log("Initializing Tailwind CSS...");
-  runCommand("npx tailwindcss init");
+  runCommand("npx tailwindcss init -p");
 
   // Step 5: Update Tailwind configuration and CSS imports
   createTailwindConfig();
