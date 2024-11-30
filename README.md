@@ -5,7 +5,7 @@ A CLI tool to create a React project with Vite, Tailwind CSS, Axios, React Icons
 ## Installation
 
 ```bash
-npx create-vite-react-tailwind
+npx react-vite-js-starter
 ```
 
 # Features
@@ -25,7 +25,7 @@ Sass for styling
 ```bash
 mkdir my-new-project
 cd my-new-project
-npx create-vite-react-tailwind
+npx react-vite-js-starter
 ```
 
 ## License
