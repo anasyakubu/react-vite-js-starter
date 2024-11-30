@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
+      # Step 1: Check out repository
       - name: Check out repository
         uses: actions/checkout@v3
 
@@ -19,33 +19,28 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          cache: "npm"
 
-      # Step 3: Install project dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install --no-save
+        run: npm install
 
-      # Step 4: Run lint and tests (optional, can be customized)
-      - name: Lint and Test
-        run: |
-          npm run lint || true
-          npm test || true
-
-      # Step 5: Configure Git user (required for version commit)
+      # Step 4: Configure Git
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 6: Bump the version, commit the change, and push
+      # Step 5: Bump version, commit, and push
       - name: Bump version, commit, and push
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           npm version patch -m "Bump version to %s [skip ci]"
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
           git push --follow-tags
 
-      # Step 7: Publish to npm
+      # Step 6: Publish to npm
       - name: Publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
