@@ -1,8 +1,21 @@
 ## **React Vite Starter with Tailwind CSS, Axios, React Icons, and Sass**
 
-Welcome to the React Vite Starter project! This project is built with modern tools to quickly bootstrap a React app with Vite, Tailwind CSS, and essential libraries like Axios and React Icons.
+Welcome to the React Vite Starter project! This project is built with modern tools to quickly start a React app with Vite, Tailwind CSS, and essential libraries like Axios and React Icons.
 
 ---
+
+## **Usage**
+
+```bash
+npx react-vite-js-starter
+```
+
+```bash
+mkdir my-new-project
+cd my-new-project
+npx react-vite-js-starter
+
+```
 
 ### **Table of Contents**
 
