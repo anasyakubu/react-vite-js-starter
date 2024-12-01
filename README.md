@@ -159,7 +159,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## **Contact**
 
-- **Author:** Your Name (Nafiu)
+- **Author:** Anas Yakubu
 - **GitHub:** [https://github.com/anasyakubu](https://github.com/anasyakubu)
 - **Portfolio:** [https://anasyakubu.vercel.app](https://anasyakubu.vercel.app)
 
