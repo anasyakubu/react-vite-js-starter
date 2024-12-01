@@ -45,7 +45,7 @@ function updateCSS() {
 
 // Function to create Home component
 function createHomeComponent() {
-  const folderPath = "./src/home";
+  const folderPath = "./src/Home";
   const filePath = `${folderPath}/Home.jsx`;
 
   if (!fs.existsSync(folderPath)) {
