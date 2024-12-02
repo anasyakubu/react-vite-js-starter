@@ -1,6 +1,6 @@
 {
   "name": "react-vite-js-starter",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A CLI tool to create a React project with Vite and Tailwind CSS",
   "main": "index.js",
   "bin": {
