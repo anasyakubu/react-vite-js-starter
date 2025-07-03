@@ -302,7 +302,7 @@ function init() {
 
   // Step 3: Install Tailwind CSS and its dependencies
   console.log("Installing Tailwind CSS 🎨🎨...");
-  runCommand("npm install -D tailwindcss postcss autoprefixer");
+  runCommand("npm install -D tailwindcss@3 postcss autoprefixer");
 
   // Step 4: Initialize Tailwind CSS configuration
   console.log("Initializing Tailwind CSS 🎨🎨...");
